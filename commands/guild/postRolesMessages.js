@@ -89,7 +89,15 @@
             )
             .setFooter(`SFW / NSFW roles don't give extra features to a user.`, client.user.displayAvatarURL());
 
-        const embeds = [generalEmbed, countryEmbed, pronounsEmbed, ageEmbed, colorsEmbed, nsfwEmbed];
+        const gamementionEmbed = new Discord.MessageEmbed()
+            .setColor(messageEmbedColor)
+            .setAuthor('GAME MENTION')
+            .setDescription(
+                ':video_game: : :video_game:┃Game mention'
+            )
+            .setFooter(`You will be tagged when there is a game and we need spaces to be filled. This is optional and can be turned off and on at any time`, client.user.displayAvatarURL());
+
+        const embeds = [generalEmbed, countryEmbed, pronounsEmbed, ageEmbed, colorsEmbed, nsfwEmbed, mentionEmbed];
 
         if (args[0] === 'all') return embeds.forEach(embed => message.channel.send(embed));
         if (args[0] === 'general') return message.channel.send(generalEmbed);
@@ -98,7 +106,7 @@
         if (args[0] === 'age') return message.channel.send(ageEmbed);
         if (args[0] === 'colors') return message.channel.send(colorsEmbed);
         if (args[0] === 'nsfw') return message.channel.send(nsfwEmbed);
-
+        if (args[0] === 'gamemention') return message.channel.send(gamementionEmbed);
     }
 
     module.exports.config = {
