@@ -1,0 +1,25 @@
+{
+  "client": {
+    "prefix": "!",
+  },
+  "administrators": [
+    "291647743930269696",
+    "266196570087620608"
+  ],
+  "messageEmbed": {
+    "color": "#040ad8",
+    "error": {
+      "noArgumentsProvided": "https://i.imgur.com/KuDxrw9.gif",
+      "notAValidPresenceType": "https://i.imgur.com/t2XroNk.gif",
+      "cantExecuteCommandInDMs": "https://i.imgur.com/1FMuk2J.gif",
+      "notAllowedToCreateScheduledGames": "https://i.imgur.com/zHPAU4c.gif",
+      "notAllowedToRemoveScheduledGames": "https://i.imgur.com/l9t7NIu.gif",
+      "notAllowedToEditScheduledGames": "https://i.imgur.com/oRHr1Cd.gif",
+      "notAllowedToSetGameCodes": "https://i.imgur.com/AU9mymM.gif",
+      "notAllowedToResetGameCodes": "https://i.imgur.com/0OceBhH.gif",
+      "didntReplyWithValidNumber": "https://i.imgur.com/6nyiRYz.gif",
+      "scheduleListEmpty": "https://i.imgur.com/ZNIXuva.gif",
+      "youRanOutOfTime": "https://i.imgur.com/0OyIst7.gif"
+    }
+  }
+}
