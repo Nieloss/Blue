@@ -97,7 +97,7 @@
             )
             .setFooter(`You will be tagged when there is a game and we need spaces to be filled. This is optional and can be turned off and on at any time`, client.user.displayAvatarURL());
 
-        const embeds = [generalEmbed, countryEmbed, pronounsEmbed, ageEmbed, colorsEmbed, nsfwEmbed, mentionEmbed];
+        const embeds = [generalEmbed, countryEmbed, pronounsEmbed, ageEmbed, colorsEmbed, nsfwEmbed, gamementionEmbed];
 
         if (args[0] === 'all') return embeds.forEach(embed => message.channel.send(embed));
         if (args[0] === 'general') return message.channel.send(generalEmbed);

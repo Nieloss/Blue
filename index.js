@@ -20,7 +20,8 @@
 
             const date = new Date();
             const localTime = date.toLocaleTimeString();
-            console.info(`[${localTime} | COMMAND LOAD] Commands loaded: ${jsCheck.length} commands of directory ${dir}: `, jsCheck);
+            console.info(`[${localTime} | COMMAND LOAD] Commands loaded: ${jsCheck.length} commands of directory ${dir}: `);
+            console.table(jsCheck);
 
             jsCheck.forEach(file => {
                 const command = require(`./commands/${dir}/${file}`);
@@ -48,7 +49,8 @@
 
             const date = new Date();
             const localTime = date.toLocaleTimeString();
-            console.info(`[${localTime} | EVENT LOAD] Events loaded: ${jsCheck.length} events of directory ${dir}: `, jsCheck);
+            console.info(`[${localTime} | EVENT LOAD] Events loaded: ${jsCheck.length} events of directory ${dir}: `);
+            console.table(jsCheck);
 
             jsCheck.forEach(file => {
                 const event = require(`./events/${dir}/${file}`);
